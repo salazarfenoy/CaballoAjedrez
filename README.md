@@ -8,7 +8,7 @@ Para ello te pongo un diagrama de clases para el mismo y poco a poco te iré exp
 
 ![Diagrama de clases para caballoajedrez](src/main/java/org/iesalandalus/programacion/caballoajedrez/caballoAjedrez.png)
 
-1. Lo primero que debes hacer es hacer un fork del repositorio donde he colocado un proyecto gradle con la estructura del proyecto y todos los test necesarios.
+1. Lo primero que debes hacer es hacer un fork del repositorio donde he colocado un proyecto gradle con la estructura del proyecto y todos los test necesarios (este repositorio).
 2. Clona tu repositorio remoto recién copiado en github a un repositorio local que será donde irás realizando lo que a continuación se te pide.
 3. Crea un enumerado llamado `Color`, dentro del paquete adecuado, que contenga los valores: BLANCO y NEGRO. Haz un commit.
 4. Crea un enumerado llamado `Direccion`, dentro del paquete adecuado, que contenga los valores: ARRIBA_IZQUIERDA, ARRIBA_DERECHA, DERECHA_ARRIBA, DERECHA_ABAJO, ABAJO_DERECHA, ABAJO_IZQUIERDA, IZQUIERDA_ARRIBA y IZQUIERDA_ABAJO.  Haz un commit.
