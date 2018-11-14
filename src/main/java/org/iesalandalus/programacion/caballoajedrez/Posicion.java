@@ -8,6 +8,11 @@ public class Posicion {
 		setFila(fila);
 		setColumna(columna);
 	}
+	public Posicion (Posicion posicion) {
+		this.fila = posicion.getFila();
+		this.columna = posicion.getColumna();
+		
+	}
 
 
 	public int getFila() {
