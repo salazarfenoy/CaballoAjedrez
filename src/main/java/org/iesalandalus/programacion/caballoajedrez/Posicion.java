@@ -20,7 +20,7 @@ public class Posicion {
 	}
 	public void setFila(int fila) {
 		if (fila<1 || fila>8) {
-			throw new IllegalArgumentException("El valor de la fila no es correcto.");
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
 		} else {
 			this.fila = fila;
 		}
@@ -34,10 +34,15 @@ public class Posicion {
 				columna == 'g' || columna =='h') {
 			this.columna = columna;
 		} else {
-			throw new IllegalArgumentException("La posici�n de la columna no es correcta.");
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		}
-	
+
 	}
+	@Override
+	public String toString() {
+		return "[fila="+fila+", columna="+columna+"]";
+	}
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;
