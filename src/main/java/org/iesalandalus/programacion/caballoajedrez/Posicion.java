@@ -36,10 +36,26 @@ public class Posicion {
 		} else {
 			throw new IllegalArgumentException("La posición de la columna no es correcta.");
 		}
-
-
-
-
+	
+	}
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Posicion)) {
+			return false;
+		}
+		Posicion other = (Posicion) obj;
+		if (fila != other.fila) {
+			return false;
+		}
+		if (columna != other.columna) {
+			return false;
+		}
+		return true;
 	}
 
 
