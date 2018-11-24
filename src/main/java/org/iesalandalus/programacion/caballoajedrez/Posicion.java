@@ -4,14 +4,14 @@ public class Posicion {
 	private int fila;
 	private char columna;
 
-	public Posicion (int fila, char columna) throws IllegalArgumentException {
+	public Posicion (int fila, char columna) {
 		setFila(fila);
 		setColumna(columna);
 	}
 	public Posicion (Posicion posicion) {
 		this.fila = posicion.getFila();
 		this.columna = posicion.getColumna();
-		
+
 	}
 
 
@@ -21,6 +21,7 @@ public class Posicion {
 	public void setFila(int fila) {
 		if (fila<1 || fila>8) {
 			throw new IllegalArgumentException("ERROR: Fila no válida.");
+
 		} else {
 			this.fila = fila;
 		}
